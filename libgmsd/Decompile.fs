@@ -267,7 +267,7 @@ module Decompile =
                 go ({Position = p; Statement = SetArrayStatement((it, r, i), e)} :: acc) xs
             
             // Turn "call[0] f" into "push f()".
-            | {Position = p; Statement = CallInstructionStatement(1, f)} :: xs ->
+            | {Position = p; Statement = CallInstructionStatement(0, f)} :: xs ->
                 go ({Position = p; Statement = PushExpressionStatement(ECall(f, []))} :: acc) xs
             // Turn "push e1; call[1] f" into "push f(e1)".
             | {Position = p; Statement = PushExpressionStatement(e1)}
