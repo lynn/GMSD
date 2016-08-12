@@ -1,4 +1,5 @@
 # GMSD
+# This decompiler doesn’t work with the latest GMS version. The project is on hiatus — check out [Altar.NET](https://gitlab.com/PoroCYon/Altar.NET) instead.
 A (non-YYC) GameMaker Studio decompiler in F#.
 
 ## Installation and Usage
